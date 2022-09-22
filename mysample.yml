@@ -4,6 +4,13 @@
   tasks: 
       - name: m going to install apache
         apt: 
-          name: apache2
+          name: "{{mywebserveronubuntu}}"
           state: present 
         when: ansible_os_family=="Debian"
+
+
+      - name: m going to install apache on redhad
+        yum: 
+          name: "{{mywebserveronredhat}}"
+          state: present 
+        when: ansible_os_family=="RedHat"

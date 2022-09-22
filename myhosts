@@ -1,6 +1,15 @@
 [mygroup]
 172.31.22.25
-172.31.12.99
+172.31.37.23
+
+
+
 [admingroup]
 172.31.12.123
 172.31.12.44
+
+
+
+[mygroup:vars]
+mywebserveronubuntu= apache2
+mywebserveronredhat= httpd
