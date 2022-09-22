@@ -1,9 +1,9 @@
 --- 
-- hosts: all 
+- hosts: mygroup 
   become: yes
   tasks: 
       - name: m going to install apache
         apt: 
           name: apache2
           state: present 
-       
+        when: ansible_os_family=="Debian"
