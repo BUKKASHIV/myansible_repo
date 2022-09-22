@@ -1,5 +1,5 @@
 --- 
-- hosts: mygroup 
+- hosts: admingroup 
   become: yes
   tasks: 
       - name: m going to install apache
